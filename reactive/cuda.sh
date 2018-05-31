@@ -321,7 +321,7 @@ function install_cuda() {
     apt-get update -qq 
     apt-get upgrade -yqq
     # In any case remove nouveau driver
-    apt-get remove -yqq --purge libdrm-nouveau* 
+    # apt-get remove -yqq --purge libdrm-nouveau* 
     # Here we also need to blacklist nouveau
     apt-get install -yqq --no-install-recommends \
         git \
