@@ -3,10 +3,10 @@ set -ex
 
 source charms.reactive.sh
 
-CUDA_VERSION="8.0.61"
+CUDA_VERSION="9.0.176"
 CUDA_SUB_VERSION="1"
 # CUDA_PKG_VERSION="7-5"
-NVIDIA_DRIVER_VERSION="375.26"
+NVIDIA_DRIVER_VERSION="384.111"
 SUPPORT_CUDA="$(lspci -nnk | grep -iA2 NVIDIA | wc -l)"
 ROOT_URL="http://developer.download.nvidia.com/compute/cuda/repos"
 
