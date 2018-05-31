@@ -164,9 +164,9 @@ function all:all:install_nvidia_driver() {
 
     apt-get remove -yqq --purge nvidia-* libcuda1-*
     apt-get install -yqq --no-install-recommends \
-        nvidia-375 \
-        nvidia-375-dev \
-        libcuda1-375
+        nvidia-384 \
+        nvidia-384-dev \
+        libcuda1-384
 }
 
 function trusty::x86_64::install_nvidia_driver() { 
